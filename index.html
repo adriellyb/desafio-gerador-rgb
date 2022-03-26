@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador RGB</title>
+
+    <!-- Import jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+</head>
+
+<body>
+    <div class="centered-container">
+
+        <!-- Title -->
+        <h1>Gerador RGB</h1>
+
+        <!-- Content Box With Current Datetime -->
+        <div class="box-datetime">
+            <div class="date" id="date"></div>
+            <div class="trace">-</div>
+            <div class="time" id="time"></div>
+        </div>
+
+        <div class="box-content-rgb">
+            <!-- Input Range With RGB Values -->
+            <div class="box-colors">
+                <div class="box-red">
+                    <input type="range" min="0" max="255" step="1" name="" id="red">
+                </div>
+                <div class="box-green">
+                    <input type="range" min="0" max="255" step="1" name="" id="green">
+                </div>
+                <div class="box-blue">
+                    <input type="range" min="0" max="255" step="1" name="" id="blue">
+                </div>
+            </div>
+            <!-- Circle -->
+            <div class="circle" id="circle"></div>
+            <!-- Print RGB Value -->
+            <div class="rgb" id="rgb"></div>
+        </div>
+
+        <!-- Developer's Information -->
+        <div class="developer">Desenvolvido por <a href="https://github.com/adriellyb/">Adrielly Balbino</a> ❤️</div>
+    </div>
+</body>
+
+</html>
