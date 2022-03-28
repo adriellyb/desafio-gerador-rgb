@@ -63,7 +63,7 @@ $(document).ready(function () {
             $('.box-datetime').css("background-color", "#44474e")
             $('.box-content-rgb').css("background-color", "#44474e")
         }
-        if (date.getHours() > 6 && date.getHours() < 18) {
+        if (date.getHours() >= 6 && date.getHours() < 18) {
             $('body').css({
                 backgroundColor: "#FFF",
                 color: "#363940"
