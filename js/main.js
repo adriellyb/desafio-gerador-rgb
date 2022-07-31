@@ -30,7 +30,7 @@ $(document).ready(function () {
         função que recebe os valores do input range e retorna o rgb
         em texto e mudar a cor do círculo
     */
-    $('#circle').on('click', function () {
+    function render () {
         var r = $('#red').val();
         var g = $('#green').val();
         var b = $('#blue').val();
@@ -42,8 +42,13 @@ $(document).ready(function () {
 
         var data = new Date();
         datetime(data)
-    })
-    /**/
+    }
+    /* renderiza os elementos a cada 1 milésimo */
+    window.setInterval(render, 100)
+
+    /*
+        tema escuro
+    */
     function darkMode(date) {
         if (date.getHours() >= 18) {
             $('body').css({
